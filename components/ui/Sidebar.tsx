@@ -11,16 +11,16 @@ const pathname = usePathname();
 
   return (
   <section className='sticky left-0 top-0 flex h-screen  w-fit flex-col justify-between
-  bg-1 p-4 pt-20 text-white max-sm:hidden lg: w-[264px]'> 
-  <div className='flex flex-1 flex-col gap-1'>
+  bg-dark-1 p-4 pt-20 text-white max-sm:hidden lg: w-[264px]'> 
+  <div className='flex flex-1 flex-col gap-4'>
 {sidebarLinks.map((link)=>{
-const isActive = pathname === link.route || pathname.startsWith(link.route);
+const isActive = pathname === link.route || pathname.startsWith(`${link.route}/`);
 
 return (
     <Link 
      href={link.route} 
       key={link.label} 
-      className={cn('flex gap-3 items-center p-4 rounded-lg justify-start',{
+      className={cn('flex gap-5 items-center p-2 rounded-lg justify-start',{
         'bg-blue-1': isActive,
       })}
       >

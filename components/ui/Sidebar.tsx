@@ -28,7 +28,7 @@ return (
        
        }  width ={15}
         height={15}/>
-        <p className='text-lg font-semibold max-lg:hidden'>
+        <p className='text-md font-semibold max-lg:hidden'>
             {link.label}
         </p>
     </Link>

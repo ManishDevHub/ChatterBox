@@ -22,7 +22,7 @@ const StreamVideoProvider = ({ children }: { children: ReactNode }) => {
       user: {
         id: user?.id,
         name: user?.username || user?.id,
-        image: user?.imageUrl,
+      image: user?.imageUrl,
       },
       tokenProvider,
     });
